@@ -7,8 +7,7 @@
     "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test:watch": "npm run test -- --watch",
     "postinstall": "webpack -p",
-    "start":"node server.js"
-
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +22,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-preset-stage-1": "^6.1.18",
+    "express": "^4.15.3",
     "lodash": "^4.17.4",
     "react": "^0.14.3",
     "react-bootstrap": "^0.30.7",
@@ -33,6 +33,7 @@
     "redux-form": "^5.3.3",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
+    "webpack": "^1.15.0",
     "youtube-api-search": "0.0.5"
   }
 }

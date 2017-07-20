@@ -4,7 +4,7 @@ import { Link, browserHistory } from 'react-router';
 import { fetchPost, deletePost } from '../../actions/index';
 import axios from 'axios';
 
-const ROOT_URL = 'http://localhost:3000';
+const ROOT_URL = 'http://rest.learncode.academy/api/learncode/kenn';
 
 const config = {
    headers: { authorization: localStorage.getItem('token') }
@@ -45,7 +45,7 @@ class ListShow extends Component {
 				</div>
 			);
 		}
-	
+
 		return (
 			<div>
 
@@ -55,7 +55,7 @@ class ListShow extends Component {
 				<div id="space"></div>
 				<p>{post.content}</p>
 				<Link to="/items" className="btn btn-primary">Back to Post List</Link>
-				
+
 				<button className="btn btn-danger"
 					onClick={this.onDeleteClick.bind(this)}>
 					Delete Post

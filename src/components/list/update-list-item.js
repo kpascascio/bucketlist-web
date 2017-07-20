@@ -6,14 +6,14 @@ import axios from 'axios';
 
 const { DOM: { input, select, textarea } } = React;
 
-const ROOT_URL = 'http://localhost:3000';
+const ROOT_URL = 'http://rest.learncode.academy/api/learncode/kenn';
 
 const config = {
    headers: { authorization: localStorage.getItem('token') }
 }
 
 class UpdateList extends Component {
-	
+
 	constructor(props) {
 		super(props);
 
@@ -45,7 +45,7 @@ class UpdateList extends Component {
 	}
 
 	handleFormSubmit(formProps){
-		//TODO - make this an update Post 
+		//TODO - make this an update Post
 	    this.props.updatePost(formProps, this.props.params.id);
 	}
 
@@ -54,7 +54,7 @@ class UpdateList extends Component {
 		return (
 			<form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
 				<h3>Update Post</h3>
-				
+
 				<fieldset className="form-group">
 					<label>Title</label>
 					<input type="text" className="form-control" {...title} value={this.state.post.title} onBlur={this.handleChange} />
@@ -85,4 +85,3 @@ export default reduxForm({
 	form: 'UpdateNewForm',
 	fields: ['title', 'topic', 'url', 'content']
 }, null, { updatePost })(UpdateList);
-

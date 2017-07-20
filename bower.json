@@ -1,0 +1,20 @@
+{
+  "name": "client",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Paul O'Connor <jamespauloconnor@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ElevenfiftyAcademy/JavaScript-301-BucketListApp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react-bootstrap": "^0.30.7"
+  }
+}

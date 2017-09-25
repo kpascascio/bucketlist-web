@@ -12,7 +12,7 @@ import {
 
 import authReducer from '../reducers/auth_reducer';
 
-const ROOT_URL = 'https://kcp-bucklist-server.herokuapp.com/';
+const ROOT_URL = 'https://kcp-bucklist-server.herokuapp.com';
 
 const config = {
    headers: { authorization: localStorage.getItem('token') }
